@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 Not Found</title>
+    
+    
+    <link rel="stylesheet" href="https://broadripplecarnival.org/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    
+    
+    <style>
+        .not-found {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            background-color: var(--color-background, #ffffff);
+            padding: 20px;
+        }
+
+        .not-found__content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .not-found__title {
+            font-size: 120px;
+            color: var(--color-accent, #6eb9a9);
+            margin: 0;
+            line-height: 1;
+            opacity: 0;
+            animation: fadeInDown 1s forwards;
+        }
+
+        .not-found__subtitle {
+            font-size: 36px;
+            margin: 0 0 20px;
+            color: var(--color-text, #333);
+            opacity: 0;
+            animation: fadeInDown 1s forwards 0.3s;
+        }
+
+        .not-found__text {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: var(--color-text-muted, #666);
+            opacity: 0;
+            animation: fadeInDown 1s forwards 0.6s;
+        }
+
+        .not-found__actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s forwards 0.9s;
+        }
+
+        .not-found__button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--color-primary, #6eb9a9);
+            color: var(--color-text-hero, #fff);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            box-shadow: 0 4px 10px var(--color-shadow, rgba(0,0,0,0.1));
+        }
+
+        .not-found__button:hover {
+            background-color: var(--color-accent, #5a9b8c);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px var(--color-shadow, rgba(0,0,0,0.15));
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .not-found__title {
+                font-size: 80px;
+            }
+            .not-found__subtitle {
+                font-size: 24px;
+            }
+            .not-found__text {
+                font-size: 16px;
+            }
+            .not-found__actions {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container container--outer">
+        <main class="main" role="main">
+            <div class="not-found">
+                <div class="not-found__content">
+                    <h1 class="not-found__title"><i class="fas fa-exclamation-triangle"></i> 404</h1>
+                    <h2 class="not-found__subtitle">Page Not Found</h2>
+                    <p class="not-found__text">Sorry, the page you requested does not exist</p>
+                    <div class="not-found__actions">
+                        <a href="https://broadripplecarnival.org/" class="not-found__button">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        
+                        
+                            
+                                <a href="https://broadripplecarnival.org/posts/the-ultimate-guide-to-carnival-tickets-in-indianapolis-prices-where-to-buy-and-tips/" class="not-found__button">
+                                    <i class="fas fa-link"></i> The Ultimate Guide to Carnival Tickets in Indianapolis: Prices, Where to Buy, and Tips
+                                </a>
+                            
+                        
+                            
+                                <a href="https://broadripplecarnival.org/posts/discover-the-exciting-broad-ripple-events-in-2025/" class="not-found__button">
+                                    <i class="fas fa-link"></i> Discover the Exciting Broad Ripple Events in 2025
+                                </a>
+                            
+                        
+                            
+                                <a href="https://broadripplecarnival.org/posts/broad-ripple-carnival-2025-your-ultimate-guide-to-this-years-festivities/" class="not-found__button">
+                                    <i class="fas fa-link"></i> Broad Ripple Carnival 2025: Your Ultimate Guide to This Year’s Festivities
+                                </a>
+                            
+                        
+                            
+                                <a href="https://broadripplecarnival.org/posts/exciting-broad-ripple-carnival-events-you-cant-miss/" class="not-found__button">
+                                    <i class="fas fa-link"></i> Exciting Broad Ripple Carnival Events You Can&#39;t Miss
+                                </a>
+                            
+                        
+                            
+                                <a href="https://broadripplecarnival.org/posts/discovering-broad-ripple-indiana-a-hip-neighborhood-guide/" class="not-found__button">
+                                    <i class="fas fa-link"></i> Discovering Broad Ripple Indiana: A Hip Neighborhood Guide
+                                </a>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
